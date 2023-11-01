@@ -3,16 +3,16 @@ import { Professional } from './professional'
 export class Movie {
     public title: string;
     public releaseYear: number;
-    public actors: Professional[];
+    public actors?: Professional[];
     public nationality: string;
-    public director: Professional;
-    public writer: Professional;
-    public language: string;
-    public platform: string;
-    public isMCU: boolean;
-    public mainCharacterName: string;
-    public producer: string;
-    public distributor: string;
+    public director?: Professional;
+    public writer?: Professional;
+    public language?: string;
+    public platform?: string;
+    public isMCU?: boolean;
+    public mainCharacterName?: string;
+    public producer?: string;
+    public distributor?: string;
     public genre: string;
 
     constructor(title: string, releaseYear: number, nationality: string, genre: string){
@@ -25,11 +25,11 @@ export class Movie {
     //método mostrar los datos de las peliculas
     public showDatas ():void {
         console.log(`title : ${this.title}`);
-        console.log(`releaseYear : ${this.releaseYear}`)
-        console.log(`actors : Professional[]`)
+        console.log(`releaseYear : ${this.releaseYear}`);
+        console.log(`actors : ${this.actors}`)
         console.log(`nationality : ${this.nationality}`)
-        console.log(`director : ${this.director}`)
-        console.log(`writer : ${this.writer}`)
+        console.log(`director : ${this.director?.name}`)
+        console.log(`writer : ${this.writer?.name}`)
         console.log(`language : ${this.language}`)
         console.log(`platform : ${this.platform}`)
         console.log(`isMCU : ${this.isMCU}`)
@@ -40,3 +40,4 @@ export class Movie {
     }
 }
 
+//optional chaining https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
