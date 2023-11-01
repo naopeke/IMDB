@@ -1,3 +1,4 @@
+//Clase Professional
 export class Professional {
     public name: string;
     public age: number;
@@ -30,5 +31,4 @@ export class Professional {
             console.log(`oscarsNumber : ${this.oscarsNumber}`)
             console.log(`profession : ${this.profession}`)
         }
-
     }
