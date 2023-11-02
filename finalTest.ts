@@ -4,14 +4,14 @@ import { Imdb } from './Imdb'
 
 //readLineSync
 const readlineSync = require('readline-sync');
-let inputName = readlineSync.question('Enter name');
-let inputAge =  readlineSync.question('Enter age');
-let inputWeight =  readlineSync.question('Enter weight');
-let inputHeight = readlineSync.question('Enter height');
-let inputRetired =  readlineSync.question('Enter if he/she is retired or not');
-let inputNationality =  readlineSync.question('Enter nationality');
-let inputOscarNumber =  readlineSync.question('Enter numbers of Oscar');
-let inputProfession =  readlineSync.question('Enter profession');
+let inputName = readlineSync.question('Enter name: ');
+let inputAge =  readlineSync.question('Enter age: ');
+let inputWeight =  readlineSync.question('Enter weight: ');
+let inputHeight = readlineSync.question('Enter height: ');
+let inputRetired =  readlineSync.question('Enter if he/she is retired or not: ');
+let inputNationality =  readlineSync.question('Enter nationality: ');
+let inputOscarNumber =  readlineSync.question('Enter numbers of Oscar: ');
+let inputProfession =  readlineSync.question('Enter profession: ');
 
 inputAge = parseFloat(inputAge);
 inputWeight = parseFloat(inputWeight);
