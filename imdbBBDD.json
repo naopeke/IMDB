@@ -1,12 +1,1 @@
-[
-  {
-    "name": "Keira Knightley",
-    "age": 38,
-    "weight": 60,
-    "height": 170,
-    "isRetired": "false",
-    "nationality": "UK",
-    "oscarsNumber": 1,
-    "profession": "Actor"
-  }
-]
+[{"name":"Keira Knightley","age":38,"weight":60,"height":170,"isRetired":"false","nationality":"UK","oscarsNumber":1,"profession":"Actor"}]

@@ -4,6 +4,7 @@ import { Imdb } from './Imdb'
 
 //readLineSync
 const readlineSync = require('readline-sync');
+
 let inputName = readlineSync.question('Enter name: ');
 let inputAge =  readlineSync.question('Enter age: ');
 let inputWeight =  readlineSync.question('Enter weight: ');
@@ -18,14 +19,15 @@ inputWeight = parseFloat(inputWeight);
 inputHeight = parseFloat(inputHeight);
 inputOscarNumber = parseFloat(inputOscarNumber);
 
-let newProfessional = new Professional (inputName, inputAge, inputWeight, inputHeight, inputRetired, inputNationality, inputOscarNumber, inputProfession)
-
-// let newProfessional = new Professional (inputName, inputAge, inputWeight, inputRetired, inputNationality, inputOscarNumber, inputProfession);
-
 const fs = require('fs');
 
+//exiting data
 let data = JSON.parse(fs.readFileSync('imdbBBDD.json', 'utf-8'));
 data = [];
+
+//new data
+let newProfessional = new Professional (inputName, inputAge, inputWeight, inputHeight, inputRetired, inputNationality, inputOscarNumber, inputProfession)
+
 data.push(newProfessional);
 fs.writeFileSync('imdbBBDD.json', JSON.stringify(data));
 

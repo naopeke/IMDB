@@ -46,7 +46,6 @@ imdb1.showMovies();
 
 
 //paso6
-
 //オブジェクトや配列などの値を JSON 形式の文字列に変換
 //change objects/array to JSON string
 // let stringImdb = JSON.stringify(imdb1)
