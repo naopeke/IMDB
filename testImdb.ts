@@ -12,10 +12,15 @@ let movie1 = new Movie ('Indiana Jones and the Last Crusade', 1989, 'USA', 'Acti
 let movie2 = new Movie ('A todo tren. Destino Asturias', 2021, 'Spain', 'Comedy');
 
 let imdb1 = new Imdb([movie1, movie2]);
+console.log('test of showMovies()')
+console.log('');
 imdb1.showMovies();
 
+
+//paso6
+
 //オブジェクトや配列などの値を JSON 形式の文字列に変換
-//change objects to JSON string
+//change objects/array to JSON string
 let stringImdb = JSON.stringify(imdb1)
 const fs = require('fs');
 
@@ -35,3 +40,13 @@ let stringImdbBBDD = fs.readFileSync('imdbBBDD.json', 'utf-8');
 //JSON.parse(text, reviver)
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
 let imdbBBDDtoJSObject = JSON.parse(stringImdbBBDD);
+
+
+//write the movies in JSON file
+imdb1.escribirEnFicheroJSON('imdbBBDD.json');
+
+//read from the file JSON
+let readImdbFromJSON = imdb1.obtenerInstanciaIMDB('imdbBBDD.json');
+console.log('Paso 6, 7, 8');
+console.log('');
+readImdbFromJSON.showMovies();

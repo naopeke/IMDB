@@ -1,0 +1,22 @@
+{
+  "name": "imdb",
+  "version": "1.0.0",
+  "description": "proyecto final imdb",
+  "main": "Imdb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naopeke/IMDB.git"
+  },
+  "author": "nao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naopeke/IMDB/issues"
+  },
+  "homepage": "https://github.com/naopeke/IMDB#readme",
+  "devDependencies": {
+    "@types/node": "^20.8.10"
+  }
+}

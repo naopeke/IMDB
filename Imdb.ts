@@ -20,16 +20,22 @@ export class Imdb {
     }
 
 //paso6
-console.log(JSON.stringify())
+// console.log(JSON.stringify())
 
-
-    //- escribirEnFicheroJSON(nombreFichero: string)
+    //método - escribirEnFicheroJSON(nombreFichero: string)
     public escribirEnFicheroJSON(nombreFichero: string){
-
+        let stringImdb = JSON.stringify(this.movies)
+        const fs = require('fs');
+        fs.writeFileSync('nombreFichero', stringImdb);
     }
 
-    //- obtenerInstanciaIMDB(nombreFichero:string):Imdb
-    public obtenerInstanciaIMDB(nombreFichero:string):Imdb
+    //método - obtenerInstanciaIMDB(nombreFichero:string):Imdb
+    public obtenerInstanciaIMDB(nombreFichero:string):Imdb{
+        const fs = require('fs');
+        let stringImdbBBDD = fs.readFileSync(nombreFichero, 'utf-8');
+        let imdbBBDDtoJSObject = JSON.parse(stringImdbBBDD);
+        return new Imdb(this.movies)
+    }
 
 }
 
