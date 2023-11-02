@@ -5,11 +5,39 @@ import { Imdb } from './Imdb'
 
 let person1 = new Professional ('Harrison Ford', 81, 80, 185, false, 'USA', 0, 'Producer');
 let person2 = new Professional ('Sean Connery', 90, 93, 188, true, 'UK', 1, 'Producer');
-let director = new Professional ('Steven Spielberg', 76, 70, 172, false, 'USA', 23, 'director');
-let writer = new Professional ('Jeffrey David Boam', 53, 60, 165, true, 'USA', 0, 'writer');
+let person3 = new Professional ('Johnny Depp', 60, 75, 178, false, 'USA', 3, 'Producer')
+
+let director1 = new Professional ('Steven Spielberg', 76, 70, 172, false, 'USA', 23, 'Director');
+let director2 = new Professional ('Gore Verbinski', 59, 90, 185, false, 'USA', 1, 'Director');
+
+let writer1 = new Professional ('Jeffrey David Boam', 53, 60, 165, true, 'USA', 0, 'Writer');
+let writer2 = new Professional  ('Ted Eliott', 62, 65, 170, false, 'USA', 2, 'Writer');
 
 let movie1 = new Movie ('Indiana Jones and the Last Crusade', 1989, 'USA', 'Action');
-let movie2 = new Movie ('A todo tren. Destino Asturias', 2021, 'Spain', 'Comedy');
+let movie2 = new Movie ('Pirates of the Caribbean: The Curse of the Black Pearl', 2003, 'USA', 'Action');
+
+
+movie1.actors = [person1, person2];
+movie1.director = director1;
+movie1.writer = writer1;
+movie1.language = 'English'
+movie1.platform = 'Netflix';
+movie1.isMCU = false;
+movie1.mainCharacterName = 'Indiana Jones';
+movie1.producer = 'Steven Spielberg';
+movie1.distributor = 'Paramount Pictures'
+
+movie2.actors = [person3];
+movie2.director = director2;
+movie2.writer = writer2;
+movie1.language = 'English'
+movie2.platform = 'HBO';
+movie2.isMCU = false;
+movie2.mainCharacterName = 'Jack Sparrow';
+movie2.producer = 'Gore Verbinski';
+movie2.distributor = 'Buena Vista Pictures Distribution'
+
+
 
 let imdb1 = new Imdb([movie1, movie2]);
 console.log('test of showMovies()')

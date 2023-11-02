@@ -26,7 +26,8 @@ export class Imdb {
     public escribirEnFicheroJSON(nombreFichero: string){
         let stringImdb = JSON.stringify(this.movies)
         const fs = require('fs');
-        fs.writeFileSync('nombreFichero', stringImdb);
+        // corrected the 'nombreFichero' to nombreFichero
+        fs.writeFileSync(nombreFichero, stringImdb);
     }
 
     //método - obtenerInstanciaIMDB(nombreFichero:string):Imdb
@@ -34,7 +35,7 @@ export class Imdb {
         const fs = require('fs');
         let stringImdbBBDD = fs.readFileSync(nombreFichero, 'utf-8');
         let imdbBBDDtoJSObject = JSON.parse(stringImdbBBDD);
-        return new Imdb(this.movies)
+        return new Imdb(imdbBBDDtoJSObject);
     }
 
 }

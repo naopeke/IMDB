@@ -26,7 +26,12 @@ export class Movie {
     public showDatas ():void {
         console.log(`title : ${this.title}`);
         console.log(`releaseYear : ${this.releaseYear}`);
-        console.log(`actors : ${this.actors}`)
+
+        // correcting this part
+        let actorsName 
+        this.actors?.forEach((actor, index) => {
+            console.log(`actors : ${actor.name}`)
+        });
         console.log(`nationality : ${this.nationality}`)
         console.log(`director : ${this.director?.name}`)
         console.log(`writer : ${this.writer?.name}`)
