@@ -12,7 +12,7 @@ export class Imdb {
     public showMovies():void {
         this.movies.forEach((movie, index) => {
             console.log(`Movie ${index +1}:\n`)
-            movie.showDatas();
+            movie.showData();
             console.log();
             console.log();
         });
@@ -21,15 +21,19 @@ export class Imdb {
     }
 
 //paso6
-// console.log(JSON.stringify())
+    // método - JSON.stringify())
+    public JSONstring(): string{
+        return JSON.stringify(this.movies);
+    }
+
+    
 
     //método - escribirEnFicheroJSON(nombreFichero: string)
     public escribirEnFicheroJSON(nombreFichero: string){
-        let stringImdb = JSON.stringify(this.movies)
         const fs = require('fs');
-        // corrected the 'nombreFichero' to nombreFichero
         //fs.writeFile(file, data[, options], callback)
-        fs.writeFileSync(nombreFichero, stringImdb);
+        fs.writeFileSync(nombreFichero, this.JSONstring());
+//        console.log('Data has been written.')
     }
 
     //método - obtenerInstanciaIMDB(nombreFichero:string):Imdb
@@ -37,7 +41,7 @@ export class Imdb {
         const fs = require('fs');
         //fs.readFileSync(path[, options])
         let data = JSON.parse(fs.readFileSync(nombreFichero, 'utf-8'));
-            return new Imdb(data.movies);
+            return new Imdb(data);
         }
         // let stringImdbBBDD = fs.readFileSync(nombreFichero, 'utf-8');
         // let imdbBBDDtoJSObject = JSON.parse(stringImdbBBDD);

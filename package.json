@@ -18,5 +18,9 @@
   "homepage": "https://github.com/naopeke/IMDB#readme",
   "devDependencies": {
     "@types/node": "^20.8.10"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "require": "^2.4.20"
   }
 }

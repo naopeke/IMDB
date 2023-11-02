@@ -7,4 +7,4 @@ let director = new Professional ('Steven Spielberg', 76, 70, 172, false, 'USA', 
 let writer = new Professional ('Jeffrey David Boam', 53, 60, 165, true, 'USA', 0, 'writer');
 
 let movie1 = new Movie ('Indiana Jones and the Last Crusade', 1989,'USA', 'action');
-movie1.showDatas();
+movie1.showData();

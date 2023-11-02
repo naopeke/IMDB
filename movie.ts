@@ -23,29 +23,29 @@ export class Movie {
     }
 
     //método mostrar los datos de las peliculas
-    public showDatas ():void {
-        console.log(`title : ${this.title}`);
-        console.log(`releaseYear : ${this.releaseYear}`);
+    public showData ():void {
+        console.log(`Title : ${this.title}`);
+        console.log(`Release Year : ${this.releaseYear}`);
 
         // correcting this part
         // console.log(`actor : ${this.actors}`)
         if (this.actors && this.actors.length > 0){
-            console.log('actors :');
+            console.log('Actors :');
             this.actors.forEach((actor, index) => {
                 console.log(`${actor.name}`);
             })
         }
         
-        console.log(`nationality : ${this.nationality}`)
-        console.log(`director : ${this.director?.name}`)
-        console.log(`writer : ${this.writer?.name}`)
-        console.log(`language : ${this.language}`)
-        console.log(`platform : ${this.platform}`)
-        console.log(`isMCU : ${this.isMCU}`)
-        console.log(`mainCharacterName : ${this.mainCharacterName}`)
-        console.log(`producer : ${this.producer}`)
-        console.log(`distributor : ${this.distributor}`)
-        console.log(`genre : ${this.genre}`)
+        console.log(`Nationality : ${this.nationality}`)
+        console.log(`Director : ${this.director?.name}`)
+        console.log(`Writer : ${this.writer?.name}`)
+        console.log(`Language : ${this.language}`)
+        console.log(`Platform : ${this.platform}`)
+        console.log(`MCU(Marvel Cinematic Universe) : ${this.isMCU}`)
+        console.log(`Main Character Name : ${this.mainCharacterName}`)
+        console.log(`Producer : ${this.producer}`)
+        console.log(`Distributor : ${this.distributor}`)
+        console.log(`Genre : ${this.genre}`)
     }
 }
 

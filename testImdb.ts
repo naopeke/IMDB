@@ -49,33 +49,36 @@ imdb1.showMovies();
 
 //オブジェクトや配列などの値を JSON 形式の文字列に変換
 //change objects/array to JSON string
-let stringImdb = JSON.stringify(imdb1)
+// let stringImdb = JSON.stringify(imdb1)
+// const fs = require('fs');
+
+// //ファイルにデータを同期的に書き込む
+// // write the data in the file synchronously
+// //fs.writeFileSync(file, data[, options])
+// fs.writeFileSync('imdbBBDD.json', stringImdb);
+
+// // ファイルの内容を同期的に読み込む
+// // read the file synchronously
+// //fs.readFileSync(path[, options])
+// //https://cratecode.com/info/nodejs-fs-readfilesync-usage
+// let stringImdbBBDD = fs.readFileSync('imdbBBDD.json', 'utf-8');
+
+// //JSON データを JavaScript のオブジェクトに変換
+// //change JSON data to Javascript object
+// //JSON.parse(text, reviver)
+// //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+// let imdbBBDDtoJSObject = JSON.parse(stringImdbBBDD);
+
+
+
+//-----------------------------------------------------
 const fs = require('fs');
-
-//ファイルにデータを同期的に書き込む
-// write the data in the file synchronously
-//fs.writeFileSync(file, data[, options])
-fs.writeFileSync('imdbBBDD.json', stringImdb);
-
-// ファイルの内容を同期的に読み込む
-// read the file synchronously
-//fs.readFileSync(path[, options])
-//https://cratecode.com/info/nodejs-fs-readfilesync-usage
-let stringImdbBBDD = fs.readFileSync('imdbBBDD.json', 'utf-8');
-
-//JSON データを JavaScript のオブジェクトに変換
-//change JSON data to Javascript object
-//JSON.parse(text, reviver)
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
-let imdbBBDDtoJSObject = JSON.parse(stringImdbBBDD);
-
-
+imdb1.JSONstring();
 //write the movies in JSON file
 imdb1.escribirEnFicheroJSON('imdbBBDD.json');
+console.log('Data has been written in the test.')
 
 //read from the file JSON
 let readImdbFromJSON = new Imdb([]);
 readImdbFromJSON.obtenerInstanciaIMDB('imdbBBDD.json');
-console.log('Paso 6, 7, 8');
-console.log('');
 readImdbFromJSON.showMovies();
