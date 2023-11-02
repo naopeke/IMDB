@@ -26,9 +26,9 @@ class Professional {
     public printAll():void {
 
         for(let propiedad in this){
-            if(typeof this[propiedad] != "function")
-            console.log(`${propiedad}: ${this[propiedad]}`);
-            
+            if(typeof this[propiedad] != "function"){
+            console.log(`${propiedad}: ${this[propiedad]}`)
+            } 
         }
         
     }
