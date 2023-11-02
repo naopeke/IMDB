@@ -72,6 +72,7 @@ imdb1.showMovies();
 
 
 //-----------------------------------------------------
+
 const fs = require('fs');
 imdb1.JSONstring();
 //write the movies in JSON file
@@ -82,3 +83,6 @@ console.log('Data has been written in the test.')
 let readImdbFromJSON = new Imdb([]);
 readImdbFromJSON.obtenerInstanciaIMDB('imdbBBDD.json');
 readImdbFromJSON.showMovies();
+
+global.json_corrector = require("json-pretty"); 
+fs.writeFileSync("./imdbBBDD.json", global.json_corrector(imdb1)); 
