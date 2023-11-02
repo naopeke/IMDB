@@ -32,19 +32,19 @@ export class Movie {
         if (this.actors && this.actors.length > 0){
             console.log('Actors :');
             this.actors.forEach((actor, index) => {
-                console.log(`${actor.name}`);
+                console.log(`${actor?.name ?? 'No Data'}`);
             })
         }
         
         console.log(`Nationality : ${this.nationality}`)
-        console.log(`Director : ${this.director?.name}`)
-        console.log(`Writer : ${this.writer?.name}`)
-        console.log(`Language : ${this.language}`)
-        console.log(`Platform : ${this.platform}`)
-        console.log(`MCU(Marvel Cinematic Universe) : ${this.isMCU}`)
-        console.log(`Main Character Name : ${this.mainCharacterName}`)
-        console.log(`Producer : ${this.producer}`)
-        console.log(`Distributor : ${this.distributor}`)
+        console.log(`Director : ${this.director?.name?? 'No Data'}`)
+        console.log(`Writer : ${this.writer?.name?? 'No Data'}`)
+        console.log(`Language : ${this.language?? 'No Data'}`)
+        console.log(`Platform : ${this.platform?? 'No Data'}`)
+        console.log(`MCU(Marvel Cinematic Universe) : ${this.isMCU?? 'No Data'}`)
+        console.log(`Main Character Name : ${this.mainCharacterName?? 'No Data'}`)
+        console.log(`Producer : ${this.producer?? 'No Data'}`)
+        console.log(`Distributor : ${this.distributor?? 'No Data'}`)
         console.log(`Genre : ${this.genre}`)
     }
 }
