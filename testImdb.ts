@@ -30,7 +30,7 @@ movie1.distributor = 'Paramount Pictures'
 movie2.actors = [person3];
 movie2.director = director2;
 movie2.writer = writer2;
-movie1.language = 'English'
+movie2.language = 'English'
 movie2.platform = 'HBO';
 movie2.isMCU = false;
 movie2.mainCharacterName = 'Jack Sparrow';
@@ -74,7 +74,8 @@ let imdbBBDDtoJSObject = JSON.parse(stringImdbBBDD);
 imdb1.escribirEnFicheroJSON('imdbBBDD.json');
 
 //read from the file JSON
-let readImdbFromJSON = imdb1.obtenerInstanciaIMDB('imdbBBDD.json');
+let readImdbFromJSON = new Imdb([]);
+readImdbFromJSON.obtenerInstanciaIMDB('imdbBBDD.json');
 console.log('Paso 6, 7, 8');
 console.log('');
 readImdbFromJSON.showMovies();
