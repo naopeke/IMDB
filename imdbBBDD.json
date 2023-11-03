@@ -1,1 +1,32 @@
-[{"name":"Keira Knightley","age":38,"weight":60,"height":170,"isRetired":"false","nationality":"UK","oscarsNumber":1,"profession":"Actor"}]
+[
+     {
+          "name": "Keira Knightley",
+          "age": 38,
+          "weight": 60,
+          "height": 170,
+          "isRetired": "false",
+          "nationality": "UK",
+          "oscarsNumber": 1,
+          "profession": "Actor"
+     },
+     {
+          "name": "Orland Bloom",
+          "age": 46,
+          "weight": 82,
+          "height": 180,
+          "isRetired": "false",
+          "nationality": "UK",
+          "oscarsNumber": 0,
+          "profession": "Actor"
+     },
+     {
+          "name": "Ken Watanabe",
+          "age": 64,
+          "weight": 90,
+          "height": 184,
+          "isRetired": "false",
+          "nationality": "Japan",
+          "oscarsNumber": 1,
+          "profession": "Actor"
+     }
+]

@@ -23,11 +23,12 @@ const fs = require('fs');
 
 //exiting data
 let data = JSON.parse(fs.readFileSync('imdbBBDD.json', 'utf-8'));
-data = [];
 
 //new data
 let newProfessional = new Professional (inputName, inputAge, inputWeight, inputHeight, inputRetired, inputNationality, inputOscarNumber, inputProfession)
 
 data.push(newProfessional);
-fs.writeFileSync('imdbBBDD.json', JSON.stringify(data));
+fs.writeFileSync('imdbBBDD.json', JSON.stringify(data, null, 5));
+//JSON.stringify(value, replacer, space);
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
 
