@@ -20,3 +20,26 @@ movie1.distributor = "PolyGram Filmed Entertainment"
 
 let imdb1 = new Imdb ([movie1])
 console.log(imdb1);
+
+// Convertir a un string el objeto Imdb.
+// - PISTA: JSON.stringify()
+
+let stringImdb1 = (JSON.stringify(imdb1));
+
+// Guardar dicho objeto en un fichero JSON con el nombre “imdbBBDD.json”.
+// - PISTA: fs.writeFileSync(file, data[, options])
+
+declare var require: any;
+const fs = require('fs');
+
+fs.writeFileSync(`imdbBBDD.json`, stringImdb1)
+
+// Leer el fichero “imdbBBDD.json” y almacenarlo en una instancia de la clase Imdb
+// - PISTA: fs.readFileSync(path[, options])
+// - PISTA: JSON.parse()
+
+let imdbBBDDData = fs.readFileSync("imdbBBDD.json", "utf8")
+let imdbBBDD = JSON.parse(imdbBBDDData)
+console.log(imdbBBDD);
+
+

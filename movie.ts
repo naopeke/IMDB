@@ -25,10 +25,10 @@ class Movie {
     public printAll ():void {
         for(let propiedad in this){
             if(typeof this[propiedad] != "function"){
-            console.log(`${propiedad}: ${this[propiedad]}`)
-        } else if (this == undefined) {console.log("no hay datos");
+                {console.log(`${propiedad}: ${this[propiedad]}`)}
+        }
     }
 }
 }
-}
+
 export {Movie}
