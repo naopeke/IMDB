@@ -75,13 +75,16 @@ imdb1.showMovies();
 const fs = require('fs');
 imdb1.JSONstring();
 //write the movies in JSON file
-imdb1.escribirEnFicheroJSON('imdbBBDD.json');
+// imdb1.escribirEnFicheroJSON('imdbBBDD.json');
+imdb1.escribirEnFicheroJSON('nombreFichero')
 console.log('Data has been written in the test.')
 
 //read from the file JSON
 let readImdbFromJSON = new Imdb([]);
-readImdbFromJSON.obtenerInstanciaIMDB('imdbBBDD.json');
+// readImdbFromJSON.obtenerInstanciaIMDB('imdbBBDD.json');
+readImdbFromJSON.obtenerInstanciaIMDB('nombreFichero');
 readImdbFromJSON.showMovies();
 
 global.json_corrector = require("json-pretty"); 
-fs.writeFileSync("./imdbBBDD.json", global.json_corrector(imdb1)); 
+// fs.writeFileSync("./imdbBBDD.json", global.json_corrector(imdb1)); 
+fs.writeFileSync("./nombreFichero", global.json_corrector(imdb1)); 
