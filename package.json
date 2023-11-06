@@ -1,8 +1,27 @@
 {
+  "name": "imdb",
+  "version": "1.0.0",
+  "description": "proyecto final imdb",
+  "main": "Imdb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naopeke/IMDB.git"
+  },
+  "author": "nao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naopeke/IMDB/issues"
+  },
+  "homepage": "https://github.com/naopeke/IMDB#readme",
   "devDependencies": {
     "@types/node": "^20.8.10"
   },
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "json-pretty": "^0.0.1",
+    "readline-sync": "^1.4.10",
+    "require": "^2.4.20"
   }
 }

@@ -32,8 +32,20 @@ class Professional {
         }
         
     }
-        
+   //método mostrar el valor
+public showValue ():void {
+    console.log(`name : ${this.name}`);
+    console.log(`age : ${this.age}`)
+    console.log(`weight : ${this.weight}`)
+    console.log(`height : ${this.height}`)
+    console.log(`isRetired : ${this.isRetired}`)
+    console.log(`nationality : ${this.nationality}`)
+    console.log(`oscarsNumber : ${this.oscarNumber}`)
+    console.log(`profession : ${this.profession}`)
+}     
      
 }
+
+
 
 export {Professional}

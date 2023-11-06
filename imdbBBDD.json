@@ -1,1 +1,32 @@
-{"peliculas":[{"tittle":"Trainspotting","releaseYear":1996,"nacionality":"británica","genre":"drama/crimen","actors":[{"name":"Ewan Mcgregor","age":52,"weight":80,"height":177,"isRetired":false,"nationality":"Británica","oscarNumber":0,"profession":"actor"}],"director":{"name":"Danny Boyle","age":67,"weight":80,"height":184,"isRetired":false,"nationality":"británico","oscarNumber":1,"profession":"Director"},"writer":{"name":"Irvin Welsh","age":65,"weight":80,"height":182,"isRetired":false,"nationality":"britanica","oscarNumber":0,"profession":"escritor"},"language":"Prime Video","isMCU":false,"mainCharacterName":"Mark Renton","producer":"Andrew Macdonald","distributor":"PolyGram Filmed Entertainment"}]}
+[
+     {
+          "name": "Keira Knightley",
+          "age": 38,
+          "weight": 60,
+          "height": 170,
+          "isRetired": "false",
+          "nationality": "UK",
+          "oscarsNumber": 1,
+          "profession": "Actor"
+     },
+     {
+          "name": "Orland Bloom",
+          "age": 46,
+          "weight": 82,
+          "height": 180,
+          "isRetired": "false",
+          "nationality": "UK",
+          "oscarsNumber": 0,
+          "profession": "Actor"
+     },
+     {
+          "name": "Ken Watanabe",
+          "age": 64,
+          "weight": 90,
+          "height": 184,
+          "isRetired": "false",
+          "nationality": "Japan",
+          "oscarsNumber": 1,
+          "profession": "Actor"
+     }
+]
