@@ -1,6 +1,6 @@
 import { Professional } from './professional'
 import { Movie } from './movie'
-import { Imdb } from './Imdb'
+import { Imdb } from './imdb'
 
 //readLineSync
 const readlineSync = require('readline-sync');
