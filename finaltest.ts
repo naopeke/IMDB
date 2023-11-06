@@ -1,6 +1,6 @@
 import { Professional } from "./professional";
 import { Movie } from "./movie";
-import { Imdb } from "./imdb";
+import { Imdb } from "./Imdbmdb";
 import { log } from "console";
 
 
